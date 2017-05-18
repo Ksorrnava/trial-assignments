@@ -1,14 +1,27 @@
 @import (inline) "../node_modules/normalize.css/normalize.css";
 
 @import "_fonts";
+@import "_sprite";
+@import "_helpers";
 
 html {
   font-size: 62.5%;
 }
 
 body {
-  font: 1.65rem/1.2 Circe, sans-serif;
-  font-weight: 300;
+  .font-light(@baseFontSize);
+  background: @gray;
 }
 
-@import "blocks/layout";
+a{
+  color:@blue;
+  text-decoration:none;
+  transition: all 0.5s ease;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+@import "blocks/product-card";
+@import "blocks/share";
+@import "blocks/conditions";
+@import "blocks/buttons";

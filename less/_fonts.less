@@ -1,0 +1,30 @@
+.font-face(@font-family, @file-path , @font-weight, @font-style) {
+  @font-face {
+    font-family: @font-family;
+    src: url('@{file-path}.eot');
+    src: url('@{file-path}.eot?#iefix') format('embedded-opentype'),
+      url('@{file-path}.woff') format('woff'),
+      url('@{file-path}.ttf') format('truetype'),
+      url('@{file-path}.svg#@{file-path}') format('svg');
+    font-weight: @font-weight;
+    font-style: @font-style;
+  }
+}
+
+.font-face('Circe Light', '../fonts/circe/circe_300', 300, normal);
+.font-face('Circe Bold', '../fonts/circe/circe_600', 600, normal);
+.font-face('Circe Extra Bold', '../fonts/circe/circe_700', 700, normal);
+.font-face('Geometria', '../fonts/Geometria-Medium', 400, normal);
+
+.font-light(@font-size){
+  font:300 @font-size/1.2 'Circe Light', sans-serif;
+}
+.font-bold(@font-size){
+  font:600 @font-size/1.2 'Circe Bold', sans-serif;
+}
+.font-xbold(@font-size){
+  font:700 @font-size/1.2 'Circe Extra Bold', sans-serif;
+}
+.font-geometria(@font-size){
+  font:400 @font-size/1.2 'Geometria', sans-serif;
+}

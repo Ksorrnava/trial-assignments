@@ -1,4 +1,10 @@
 /* block layout */
 .layout {
-
+  width:100%;
+  max-width:1018px;
+  margin: 0 auto;
+  .responsive(@tablet, {
+    padding-left: 0;
+    max-width:650px;
+  });
 }
