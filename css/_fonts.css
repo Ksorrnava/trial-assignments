@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Circe Light';
+  src: url('../fonts/circe/circe_300.eot');
+  src: url('../fonts/circe/circe_300.eot?#iefix') format('embedded-opentype'), url('../fonts/circe/circe_300.woff') format('woff'), url('../fonts/circe/circe_300.ttf') format('truetype'), url('../fonts/circe/circe_300.svg#../fonts/circe/circe_300') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circe Bold';
+  src: url('../fonts/circe/circe_600.eot');
+  src: url('../fonts/circe/circe_600.eot?#iefix') format('embedded-opentype'), url('../fonts/circe/circe_600.woff') format('woff'), url('../fonts/circe/circe_600.ttf') format('truetype'), url('../fonts/circe/circe_600.svg#../fonts/circe/circe_600') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circe Extra Bold';
+  src: url('../fonts/circe/circe_700.eot');
+  src: url('../fonts/circe/circe_700.eot?#iefix') format('embedded-opentype'), url('../fonts/circe/circe_700.woff') format('woff'), url('../fonts/circe/circe_700.ttf') format('truetype'), url('../fonts/circe/circe_700.svg#../fonts/circe/circe_700') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geometria';
+  src: url('../fonts/Geometria-Medium.eot');
+  src: url('../fonts/Geometria-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Geometria-Medium.woff') format('woff'), url('../fonts/Geometria-Medium.ttf') format('truetype'), url('../fonts/Geometria-Medium.svg#../fonts/Geometria-Medium') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
