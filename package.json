@@ -12,9 +12,11 @@
     "normalize.css": "^4.1.1"
   },
   "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "browser-sync": "^2.18.11",
     "gulp": "^3.9.1",
     "gulp-less": "^3.0.5",
     "gulp-postcss": "^6.1.0",
-    "autoprefixer": "^6.3.3"
+    "gulp.spritesmith": "^6.5.0"
   }
 }

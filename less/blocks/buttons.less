@@ -1,0 +1,41 @@
+/* buttons */
+.button {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 0 11px;
+  width: 240px;
+  box-sizing: border-box;
+  line-height: 1;
+  -webkit-appearance: none;
+  border: none;
+  color: @text;
+  outline: none;
+  transition: all 0.5s ease;
+  .responsive(@tablet, { width:140px; });
+}
+
+.buttons {
+  padding: @space*1.75 0;
+  .responsive(@tablet, { padding:@space 0; });
+
+  &__button {
+    .button;
+    background: @white;
+    color: @text;
+    border: @baseBorder;
+    display: inline-block;
+    margin-right: @space;
+    .responsive(@tablet, { margin-right:@space/2; });
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:active,
+    &:hover {
+      background: @blue;
+      color: @white;
+      border-color: @blue;
+    }
+  }
+}

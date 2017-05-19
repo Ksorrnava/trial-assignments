@@ -1,0 +1,24 @@
+//Breakpoints
+@desktop: 1288px;
+@tablet: 1018px;
+@mobile: 767px;
+
+// Mixin responsive
+.responsive(@maxWidth; @rules) {
+  @media only screen and (max-width: @maxWidth) {
+    @rules();
+  }
+}
+
+//Colors
+@white: #ffffff;
+@blue: #006be5;
+@gray: #f4f4f4;
+@text: #131313;
+
+//Fonts
+@baseFontSize: 13px;
+
+//Spacers
+@space:20px;
+@baseBorder:2px solid @gray - #1b1b1b;

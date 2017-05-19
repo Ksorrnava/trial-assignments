@@ -1,0 +1,31 @@
+/* Price */
+.card-price {
+  margin-bottom: 16px;
+
+  &__item {
+      font-size: @baseFontSize + 5;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 8px 0;
+
+    &--old {
+      color: @gray - 54;
+      margin-right: @space/2;
+    }
+
+    &--actual {
+      color: @gray - 89;
+      .font-bold(@baseFontSize + 5);
+      margin-right: @space*1.75;
+    }
+
+    &--promo {
+      .font-bold(@baseFontSize + 5);
+      letter-spacing: 0.8px;
+    }
+  }
+
+  &__title {
+    .font-light(@baseFontSize + 2);
+  }
+}

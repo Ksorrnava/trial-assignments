@@ -1,0 +1,38 @@
+/* block conditions */
+.card-conditions {
+  padding: @space - 5 @space + 2;
+  background: @gray;
+  margin-bottom: 15px;
+  display: inline-block;
+  min-width: 340px;
+  box-sizing: border-box;
+  .responsive(@tablet, { min-width:100%; margin-bottom:@space/2; });
+
+  &__item {
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  &__stock--present {
+    &:before {
+      .sprite(@ico-stock);
+    }
+  }
+
+  &__delivery--free {
+    &:before {
+      .sprite(@ico-delivery);
+    }
+  }
+}

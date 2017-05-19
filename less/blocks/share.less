@@ -1,0 +1,84 @@
+/* block share */
+.share {
+  overflow: hidden;
+  padding: 30px 0;
+  .responsive(@tablet, { padding: @space 0; });
+
+  &__label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: @space;
+    .responsive(@tablet, { display:none; });
+  }
+
+  &__list {
+    display: inline-block;
+    vertical-align: middle;
+
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      position: relative;
+      margin-right: @space/2;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      border: @baseBorder;
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 8px;
+      }
+
+      &:hover {
+        background-color: @blue;
+        border-color: @blue;
+      }
+    }
+
+    &--vk:after {
+      .sprite(@ico-vk);
+      left: 10px;
+    }
+
+    &--google:after {
+      .sprite(@ico-google);
+      left: 8px;
+    }
+
+    &--fb:after {
+      .sprite(@ico-fb);
+      top: 8px;
+      left: 11px;
+    }
+
+    &--twitter:after {
+      .sprite(@ico-twitter);
+      left: 8px;
+    }
+  }
+
+  &__counter {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 11px;
+    background: @gray;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: 13.5px;
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 5px 5px 5px 0;
+      border-color: transparent #f4f4f4 transparent transparent;
+    }
+  }
+}
